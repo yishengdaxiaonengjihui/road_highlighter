@@ -1,0 +1,42 @@
+# 中国国省道路网配置文件（示例：上海市）
+
+# 数据源（二选一）
+# 方式1: OSM 按地名（在线下载）
+# place: "Shanghai, China"
+
+# 方式2: OSM 本地 PBF（离线推荐）
+# pbf_path: "map/shanghai-latest.osm.pbf"
+
+# 边界框：[south, west, north, east]（上海市大致范围）
+bbox: [31.1, 121.0, 31.9, 122.2]   # 上海市全域
+
+# 需要高亮显示的道路（ref 编号）
+target_roads:
+  - "G40"    # 沪陕高速
+  - "G50"    # 沪渝高速
+  - "G60"    # 沪昆高速
+  - "G1503"  # 上海绕城高速
+  - "S1"     # 迎宾高速
+  - "S2"     # 沪芦高速
+  - "S20"    # 外环高速
+  - "S30"    # 金南高速
+
+# 道路名称（图例显示，可选）
+road_names:
+  G40: "沪陕高速"
+  G50: "沪渝高速"
+  G60: "沪昆高速"
+  G1503: "绕城高速"
+  S1: "迎宾高速"
+  S2: "沪芦高速"
+  S20: "外环高速"
+  S30: "金南高速"
+
+# 输出路径
+output: "data/outputs/shanghai_road_network.svg"
+
+# 样式配置
+bg_road_color: "#bdc3c7"
+bg_road_width: 1.2
+target_width: 3.5
+title: "上海市国省道路网图"
