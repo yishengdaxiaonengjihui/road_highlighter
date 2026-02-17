@@ -131,9 +131,7 @@ A: 在 `generate_map.py` 中可调整 `allowed_highways` 集合，只保留需�
 - **绘图**: Matplotlib + GeoPandas，输出 SVG
 
 ---
-
-**MIT License**
-
+*AI-generated*
 ---
 
-*AI-generated*
+**MIT License**
